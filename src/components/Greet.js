@@ -20,12 +20,16 @@ export default Greet */
 //named export
 
 //To greet more than one person
+
+// we could use any name instead of props. it means PROPERTIES
+// because we are writing more than a line we use "return" statement
 let Greet = (props) => {
     console.log(props)
     return (
         <div>
             <h1>Hello {props.name} A.K.A {props.heroName}</h1>
-            {props.children}
+            {props.children}   
+            {/* props.children is for any additional content that will be in between the opening and closing tags */}
         </div> // you can have only one element in a class. if you need to use more, enclose them in a div
     )
 }
