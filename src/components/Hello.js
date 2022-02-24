@@ -28,7 +28,9 @@ let Hello = () => {
     return React.createElement(
         'div', 
         {id: 'hello', className: 'DummyClass'}, //since class is a reserve keyword in JS, we use className in react
-        React.createElement('h1', null, 'hello Siegfred'))
+        React.createElement('h1', null, 'hello Siegfred')
+        // ,React.createElement('h1', null, 'hello kachi', React.createElement('h4', { className:"ball" }, "My man"))
+        )
 } 
 
 export default Hello;
