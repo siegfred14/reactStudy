@@ -5,12 +5,13 @@ import Welcome from './components/Welcome'
 import Joy from './components/MyTest'
 import Hello from './components/Hello'
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
-
-      <Message />
+      <Counter />
+      {/* <Message /> */}
       {/* <Greet/> */} {/* if Greet is exported as a default component, we can import it with any name */}
       {/* <Welcome />
       <Joy/> */}
