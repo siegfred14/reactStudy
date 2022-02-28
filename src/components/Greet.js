@@ -35,7 +35,19 @@ export default Greet */
 // }
 
 // by destructuring we have
-let Greet = ({name, heroName, children}) => {
+// let Greet = ({name, heroName, children}) => {
+//     return (
+//         <div>
+//             <h1>Hello {name} A.K.A {heroName}</h1>
+//             {children}   
+//             {/* props.children is for any additional content that will be in between the opening and closing tags */}
+//         </div> // you can have only one element in a class. if you need to use more, enclose them in a div
+//     )
+// }
+
+// Alternative way is to destructure in the function
+let Greet = (props) => {
+    const {name, heroName, children} = props
     return (
         <div>
             <h1>Hello {name} A.K.A {heroName}</h1>
@@ -44,6 +56,7 @@ let Greet = ({name, heroName, children}) => {
         </div> // you can have only one element in a class. if you need to use more, enclose them in a div
     )
 }
+
 
 export default Greet
 
