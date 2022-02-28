@@ -22,4 +22,8 @@ class Welcome extends Component{
     }
 }
 
+// Your props object may contain several props but destructure only the ones you need to use
+// To destructure several state objects, use
+// const {state1, state2} = this.state
+
 export default Welcome;
