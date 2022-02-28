@@ -6,11 +6,20 @@ import React, { Component } from 'react'
 2.) the class must implement a render method which returns null or some HTML 
 
 */
+// class Welcome extends Component{
+//     render(){
+//         return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>
+//     }
+// }
+// IN CLASS COMPONENTS, WE DESTRUCTURE PROPS OR STATE IN THE RENDER METHOD
+
 class Welcome extends Component{
     render(){
-        return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>
+        const {name, heroName} = this.props
+        return (
+            <h1>Welcome {name} a.k.a {heroName}</h1>
+        )
     }
 }
-// IN CLASS COMPONENTS, WE DESTRUCTURE PROPS OR STATE IN THE RENDER METHOD
 
 export default Welcome;
