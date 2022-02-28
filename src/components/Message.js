@@ -9,6 +9,8 @@ class Message extends Component {
         }
     }
 
+    // NB: this.state can only be assigned in the constructor.
+    // Anywhere else, it has to be effected with the setState method 
     changeMessage(){
         this.setState({
             message: 'Thank you for subscribing'
