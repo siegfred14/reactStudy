@@ -10,19 +10,19 @@ import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet/> */} {/* if Greet is exported as a default component, we can import it with any name */}
       {/* <Welcome />
       <Joy/> */}
       {/* <Hello/> */}
-      {/* <Greet name= "Bodam" heroName= "batman">
+      <Greet name= "Bodam" heroName= "batman">
         <p>this is childrens props</p>
       </Greet>
       <Greet name= "Tunde" heroName= "Superman">
         <button>Samantha</button>
       </Greet>
-      <Greet name= "Anietie" heroName= "Wonder Woman"/> */}
+      <Greet name= "Anietie" heroName= "Wonder Woman"/>
 
       {/* Using props with a class component */}
       {/* <Welcome name= "Bodam" heroName= "batman" />
