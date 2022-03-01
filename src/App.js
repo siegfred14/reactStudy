@@ -6,10 +6,12 @@ import Joy from './components/MyTest'
 import Hello from './components/Hello'
 import Message from './components/Message';
 import Counter from './components/Counter';
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
+      <EventBind />
       {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet/> */} {/* if Greet is exported as a default component, we can import it with any name */}
@@ -25,9 +27,9 @@ function App() {
       <Greet name= "Anietie" heroName= "Wonder Woman"/> */}
 
       {/* Using props with a class component */}
-      <Welcome name= "Bodam" heroName= "batman" />
+      {/* <Welcome name= "Bodam" heroName= "batman" />
       <Welcome name= "Tunde" heroName= "Superman" />
-      <Welcome name= "Anietie" heroName= "Wonder Woman" />
+      <Welcome name= "Anietie" heroName= "Wonder Woman" /> */}
     </div>
   );
 }
