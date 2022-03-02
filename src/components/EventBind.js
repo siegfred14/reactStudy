@@ -16,6 +16,8 @@ class EventBind extends Component {
         })
     }
 
+    // This keyword is undefine in JS, that is why event binding is required
+    
   render() {
     return (
       <div>
