@@ -10,11 +10,17 @@ class EventBind extends Component {
       }
     }
 
+    newMessage() {
+        this.setState({
+            message : 'Goodbye'
+        })
+    }
+
   render() {
     return (
       <div>
           <div>{this.state.message}</div>
-        <button>Click</button>
+        <button onClick={()=> this.newMessage()}>Click</button>
       </div>
     )
   }
