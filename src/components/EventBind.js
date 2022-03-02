@@ -9,14 +9,20 @@ class EventBind extends Component {
          message: 'Hello'
       }
 
-      this.newMessage = this.newMessage.bind(this)
+    //   this.newMessage = this.newMessage.bind(this)
     }
 
-    newMessage() {
+    // newMessage() {
+    //     this.setState({
+    //         message : 'Goodbye'
+    //     })
+    //     console.log(this)
+    // }
+
+    newMessage = () => {
         this.setState({
-            message : 'Goodbye'
+            message: 'Goodbye!'
         })
-        console.log(this)
     }
 
     // This keyword is undefine in JS, that is why event binding is required
@@ -38,6 +44,8 @@ class EventBind extends Component {
         {/* then we call our event without the parentheses */}
         {/* this is the most acceptable method, as listed in the react documentation */}
         <button onClick={this.newMessage}>Click</button>
+
+        {/* Method 4. using an arrow function as a class property. Go UP */}
       </div>
     )
   }
