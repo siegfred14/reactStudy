@@ -8,6 +8,8 @@ class EventBind extends Component {
       this.state = {
          message: 'Hello'
       }
+
+      this.newMessage = this.newMessage.bind(this)
     }
 
     newMessage() {
@@ -29,7 +31,13 @@ class EventBind extends Component {
         {/* <button onClick={this.newMessage.bind(this)}>Click</button> */}
 
         {/* 2nd approach is - using arrow functions in the render method */}
-        <button onClick={() => this.newMessage()}>Click</button>
+        {/* <button onClick={() => this.newMessage()}>Click</button> */}
+        {/* similar to the first, this approach may also have performance issues */}
+
+        {/* 3rd approach is to bind the event handler in the constuctor as opposed to in the render method */}
+        {/* then we call our event without the parentheses */}
+        {/* this is the most acceptable method, as listed in the react documentation */}
+        <button onClick={this.newMessage}>Click</button>
       </div>
     )
   }
