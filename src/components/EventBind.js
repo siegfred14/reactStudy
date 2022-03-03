@@ -19,6 +19,7 @@ class EventBind extends Component {
     //     console.log(this)
     // }
 
+    // function for 4th approach
     newMessage = () => {
         this.setState({
             message: 'Goodbye!'
@@ -46,6 +47,9 @@ class EventBind extends Component {
         <button onClick={this.newMessage}>Click</button>
 
         {/* Method 4. using an arrow function as a class property. Go UP */}
+
+        {/* as approach number 4 is still under experiment, we use approach 3
+         */}
       </div>
     )
   }
