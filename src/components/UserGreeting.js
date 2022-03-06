@@ -11,15 +11,22 @@ class UserGreeting extends Component {
       }
 
   render() {
-    //   Type 2 of conditional rendering
 
-    let message;
-    if (this.state.isLoggedIn){
-        message = <div>Welcome Siegfred</div>
-    }else{
-        message = <div>Welcome Guest</div>
-    }
-    return <div>{message}</div>
+    return(
+        this.state.isLoggedIn?
+        <div>Welcome SIegfred</div>:
+        <div>Welcome GUest</div>
+    )
+
+    //   Type 2 of Element method conditional rendering
+
+    // let message;
+    // if (this.state.isLoggedIn){
+    //     message = <div>Welcome Siegfred</div>
+    // }else{
+    //     message = <div>Welcome Guest</div>
+    // }
+    // return <div>{message}</div>
 
     //   Type 1 of conditional rendering
     //   if (this.state.isLoggedIn){
