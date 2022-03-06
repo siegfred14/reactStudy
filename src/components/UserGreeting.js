@@ -1,22 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class UserGreeting extends Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props)
-      
-        this.state = {
-           isLoggedIn: false
-        }
-      }
+    this.state = {
+      isLoggedIn: false,
+    };
+  }
 
   render() {
+    // short circuit operator approach
+    // Used if we want to render just one condition. nothing is rendered when it is false
+    return this.state.isLoggedIn && <div>Welcome SIegfred</div>;
 
-    return(
-        this.state.isLoggedIn?
-        <div>Welcome SIegfred</div>:
-        <div>Welcome GUest</div>
-    )
+    // Using the tenary conditional operator approach
+    // return this.state.isLoggedIn ? (
+    //   <div>Welcome SIegfred</div>
+    // ) : (
+    //   <div>Welcome GUest</div>
+    // );
 
     //   Type 2 of Element method conditional rendering
 
@@ -52,4 +55,4 @@ class UserGreeting extends Component {
   }
 }
 
-export default UserGreeting
+export default UserGreeting;
