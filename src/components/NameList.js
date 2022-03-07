@@ -16,7 +16,28 @@ function NameList() {
   //   );
 
   //   Using the variables
-  const names = ["Bruce", "Clark", "Diana"];
+  //   const names = ["Bruce", "Clark", "Diana"];
+  //   const nameList = names.map((name) => <h2>{name}</h2>);
+  //   return <div>{nameList}</div>;
+
+  // Using Array of objects
+  const names = [
+    {
+      id: 1,
+      name: "Bruce",
+      skill: "React",
+    },
+    {
+      id: 2,
+      name: "Clark",
+      skill: "Angular",
+    },
+    {
+      id: 3,
+      name: "Diana",
+      skill: "Vue",
+    },
+  ];
   const nameList = names.map((name) => <h2>{name}</h2>);
   return <div>{nameList}</div>;
 }
