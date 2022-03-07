@@ -21,7 +21,7 @@ function NameList() {
   //   return <div>{nameList}</div>;
 
   // Using Array of objects
-  const names = [
+  const persons = [
     {
       id: 1,
       name: "Bruce",
@@ -38,8 +38,13 @@ function NameList() {
       skill: "Vue",
     },
   ];
-  const nameList = names.map((name) => <h2>{name}</h2>);
-  return <div>{nameList}</div>;
+  const personList = persons.map((person) => (
+    <h2>
+      Je m'appelle {person.name}, J'ai {person.age} ans et j'ai competence en{" "}
+      {person.skill}
+    </h2>
+  ));
+  return <div>{personList}</div>;
 }
 
 export default NameList;
