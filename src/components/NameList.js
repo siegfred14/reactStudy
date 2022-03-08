@@ -50,3 +50,8 @@ function NameList() {
 }
 
 export default NameList;
+
+// Notes about keys
+// Key prop cannot be a prop in the child component
+// Keys help react identify which item in the list has changed, has been added or removed.
+//  It plays a crucial role in handling UIs efficiently
