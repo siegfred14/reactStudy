@@ -44,7 +44,7 @@ function NameList() {
     //   Je m'appelle {person.name}, J'ai {person.age} ans et j'ai competence en{" "}
     //   {person.skill}
     // </h2>
-    <Person person={person} />
+    <Person key={person.id} person={person} />
   ));
   return <div>{personList}</div>;
 }
