@@ -2,7 +2,7 @@ import React from "react";
 import Person from "./Person";
 
 function NameList() {
-  //   let names = ["Bruce", "Clark", "Diana"];
+  let names = ["Bruce", "Clark", "Diana"];
   //   return (
   //     <div>
   //       {/* <h2>{names[0]}</h2>
@@ -39,14 +39,16 @@ function NameList() {
       skill: "Vue",
     },
   ];
-  const personList = persons.map((person) => (
-    // <h2>
-    //   Je m'appelle {person.name}, J'ai {person.age} ans et j'ai competence en{" "}
-    //   {person.skill}
-    // </h2>
-    <Person key={person.id} person={person} />
-  ));
-  return <div>{personList}</div>;
+  //   const personList = persons.map((person) => (
+  //     // <h2>
+  //     //   Je m'appelle {person.name}, J'ai {person.age} ans et j'ai competence en{" "}
+  //     //   {person.skill}
+  //     // </h2>
+  //     <Person key={person.id} person={person} />
+  //   ));
+
+  const nameList = names.map((name) => <h2>{name}</h2>);
+  return <div>{nameList}</div>;
 }
 
 export default NameList;
