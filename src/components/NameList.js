@@ -59,7 +59,10 @@ export default NameList;
 //  It plays a crucial role in handling UIs efficiently
 // using index as a key can cause UI issues however
 
-// When to use Index as key
+// When to use Index as key in a list
 // The items in your list do nothave a unique id
 // the list is a static list and will not change
 // The list will never be reordered or filtered
+
+// these 3 must be satisfied for an index to be used as key
+// else, use one of the npm packages for generating unique keys or hash out a unique property from one of the existing properties
