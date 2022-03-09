@@ -57,3 +57,4 @@ export default NameList;
 // Key prop cannot be a prop in the child component
 // Keys help react identify which item in the list has changed, has been added or removed.
 //  It plays a crucial role in handling UIs efficiently
+// using index as a key can cause UI issues however
