@@ -58,3 +58,8 @@ export default NameList;
 // Keys help react identify which item in the list has changed, has been added or removed.
 //  It plays a crucial role in handling UIs efficiently
 // using index as a key can cause UI issues however
+
+// When to use Index as key
+// The items in your list do nothave a unique id
+// the list is a static list and will not change
+// The list will never be reordered or filtered
