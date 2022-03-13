@@ -12,6 +12,8 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./inline";
+import "./appStyle.css";
+import styles from "./appStyles.module.css";
 
 function App() {
   return (
