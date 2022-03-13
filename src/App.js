@@ -49,3 +49,6 @@ function App() {
 }
 
 export default App;
+
+// css applies to every child component. once imported in App.js
+// css.modules however, because you reference the class name using the 'styles' variable, it cannot be access in the children component
