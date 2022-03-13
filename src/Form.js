@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 class Form extends Component {
   render() {
-    return <div>Form Component</div>;
+    return (
+      <form>
+        <label>Username</label>
+        <input type="text" />
+      </form>
+    );
   }
 }
 
