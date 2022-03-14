@@ -22,12 +22,18 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <label>Username</label>
-        <input
-          type="text"
-          value={this.state.username}
-          onChange={this.handleUsernamechange}
-        />
+        <div>
+          <label>Username</label>
+          <input
+            type="text"
+            value={this.state.username}
+            onChange={this.handleUsernamechange}
+          />
+        </div>
+        <div>
+            <label>Comments<label/>
+            <textarea><textarea/>
+        <div/>
       </form>
     );
   }
