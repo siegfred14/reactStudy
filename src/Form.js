@@ -10,6 +10,7 @@ class Form extends Component {
 
     this.state = {
       username: "",
+      comments: "",
     };
   }
 
@@ -31,9 +32,9 @@ class Form extends Component {
           />
         </div>
         <div>
-            <label>Comments<label/>
-            <textarea><textarea/>
-        <div/>
+          <label>Comments</label>
+          <textarea value={this.state.comments}></textarea>
+        </div>
       </form>
     );
   }
