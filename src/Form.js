@@ -44,6 +44,13 @@ class Form extends Component {
             onChange={this.handleCommentsChange}
           ></textarea>
         </div>
+        <div>
+          <select>
+            <option value="react">React</option>
+            <option value="angular">angular</option>
+            <option value="vue">vue</option>
+          </select>
+        </div>
       </form>
     );
   }
