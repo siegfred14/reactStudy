@@ -58,6 +58,7 @@ class Form extends Component {
             <option value="vue">vue</option>
           </select>
         </div>
+        <button type="submit">Submit</button>
       </form>
     );
   }
