@@ -20,6 +20,12 @@ class Form extends Component {
     });
   };
 
+  handleCommentsChange = (event) => {
+    this.setState({
+      comments: event.target.value,
+    });
+  };
+
   render() {
     return (
       <form>
@@ -33,7 +39,10 @@ class Form extends Component {
         </div>
         <div>
           <label>Comments</label>
-          <textarea value={this.state.comments}></textarea>
+          <textarea
+            value={this.state.comments}
+            onChange={this.handleCommentsChange}
+          ></textarea>
         </div>
       </form>
     );
