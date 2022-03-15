@@ -33,9 +33,13 @@ class Form extends Component {
     });
   };
 
+  handleSubmit = (event) => {
+    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>Username</label>
           <input
