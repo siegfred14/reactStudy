@@ -11,6 +11,7 @@ class Form extends Component {
     this.state = {
       username: "",
       comments: "",
+      topic: "react",
     };
   }
 
@@ -45,7 +46,7 @@ class Form extends Component {
           ></textarea>
         </div>
         <div>
-          <select>
+          <select value={this.state.topic} onChange={this.handleTopicChange}>
             <option value="react">React</option>
             <option value="angular">angular</option>
             <option value="vue">vue</option>
