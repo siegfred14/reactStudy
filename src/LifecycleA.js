@@ -14,6 +14,10 @@ class LifecycleA extends Component {
     console.log("LifecycleA getDerivedStateFromProps");
   }
 
+  componentDidMount() {
+    console.log("LifecycleA ComponentDidMount");
+  }
+
   render() {
     console.log("LifecycleA render");
     return <div>LifecycleA</div>;
