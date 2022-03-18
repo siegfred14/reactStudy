@@ -10,6 +10,10 @@ class LifecycleA extends Component {
     console.log("LifecycleA constructor");
   }
 
+  static getDerivedStateFromProps(props, state) {
+    console.log("LifecycleA getDerivedStateFromProps");
+  }
+
   render() {
     console.log("LifecycleA render");
     return <div>LifecycleA</div>;
