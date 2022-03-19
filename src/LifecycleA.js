@@ -36,3 +36,5 @@ class LifecycleA extends Component {
 }
 
 export default LifecycleA;
+
+// this runs in the manner 1,2,4,3
