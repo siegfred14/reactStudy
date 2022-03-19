@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LifecycleB from "./LifecycleB";
 
 // methods in mounting
 class LifecycleA extends Component {
@@ -25,7 +26,12 @@ class LifecycleA extends Component {
   // method 4: render method
   render() {
     console.log("LifecycleA render");
-    return <div>LifecycleA</div>;
+    return (
+      <div>
+        <div>LifecycleA</div>
+        <LifecycleB />
+      </div>
+    );
   }
 }
 
