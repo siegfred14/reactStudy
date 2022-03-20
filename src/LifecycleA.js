@@ -30,6 +30,11 @@ class LifecycleA extends Component {
     return true;
   }
 
+  // Updating method 4: getSnapshotBeforeUpdate
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("LifecycleA getSnapshotBeforeUpdate");
+  }
+
   // method 4: render method
   render() {
     console.log("LifecycleA render");
