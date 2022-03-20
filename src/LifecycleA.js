@@ -79,3 +79,8 @@ export default LifecycleA;
 //  method is invoked immediately before component is unmounted or destroyed
 // cancelling any network requests, removing event handlers, cancelling any subscriptions and and also invalidating timers
 // do not call the setState method because a component is never re-rendered after unmounted
+
+// Error Handling Phase Methods
+// static getDerivedStateFromError(error)
+// componentDidCatch(error, info)
+// Both are called when there is an error either during rendering in a lifecycle method or in the constructor of any child component
