@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import LifecycleB from "./LifecycleB";
 
@@ -38,3 +39,10 @@ class LifecycleA extends Component {
 export default LifecycleA;
 
 // this runs in the manner 1,2,4,3
+
+// Updating Lifecycle methods
+// constructor(props)
+// static getDerivedStateFromProps(props, state)
+// render()
+// getSnapshotBeforeUpdate(prevProps, prevState)
+// componentDidUpdate(prevProps, prevState, snapshot)
