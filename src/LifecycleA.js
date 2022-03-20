@@ -24,6 +24,12 @@ class LifecycleA extends Component {
     console.log("LifecycleA ComponentDidMount");
   }
 
+  // Updating method 2: shouldComponentUpdate
+  shouldComponentUpdate() {
+    console.log("LifecycleA shouldComponentUpdate");
+    return true;
+  }
+
   // method 4: render method
   render() {
     console.log("LifecycleA render");
@@ -43,6 +49,7 @@ export default LifecycleA;
 // Updating Lifecycle methods
 // constructor(props)
 // static getDerivedStateFromProps(props, state)
+// shouldComponentUpdate(nextProps, nextState)
 // render()
 // getSnapshotBeforeUpdate(prevProps, prevState)
 // componentDidUpdate(prevProps, prevState, snapshot)
