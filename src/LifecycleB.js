@@ -15,6 +15,23 @@ class LifecycleB extends Component {
   // method 2: getDerivedStateFromProps
   static getDerivedStateFromProps(props, state) {
     console.log("LifecycleB getDerivedStateFromProps");
+    return null;
+  }
+
+  // Updating method 2: shouldComponentUpdate
+  shouldComponentUpdate() {
+    console.log("LifecycleB shouldComponentUpdate");
+    return true;
+  }
+
+  // Updating method 4: getSnapshotBeforeUpdate
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("LifecycleB getSnapshotBeforeUpdate");
+  }
+
+  // Updating method 5: componentDidUpdate
+  componentDidUpdate() {
+    console.log("LifecycleB componentDidUpdate");
   }
 
   // method 3: componentDidMount
