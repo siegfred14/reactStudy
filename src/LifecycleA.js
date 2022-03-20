@@ -71,3 +71,11 @@ export default LifecycleA;
 // render()
 // getSnapshotBeforeUpdate(prevProps, prevState)
 // componentDidUpdate(prevProps, prevState, snapshot)
+
+// render and componentDidUpdate are the most used during lifecycle update
+
+// Unmounting Phase
+// Only method used is  componentWillUnmount()
+//  method is invoked immediately before component is unmounted or destroyed
+// cancelling any network requests, removing event handlers, cancelling any subscriptions and and also invalidating timers
+// do not call the setState method because a component is never re-rendered after unmounted
