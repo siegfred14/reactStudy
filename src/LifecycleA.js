@@ -40,12 +40,19 @@ class LifecycleA extends Component {
     console.log("LifecycleA componentDidUpdate");
   }
 
+  changeState = () => {
+    this.setState({
+      name: "SiegfredDOM",
+    });
+  };
+
   // method 4: render method
   render() {
     console.log("LifecycleA render");
     return (
       <div>
         <div>LifecycleA</div>
+        <button onClick={this.changeState}>Change State</button>
         <LifecycleB />
       </div>
     );
