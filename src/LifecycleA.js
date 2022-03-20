@@ -35,6 +35,11 @@ class LifecycleA extends Component {
     console.log("LifecycleA getSnapshotBeforeUpdate");
   }
 
+  // Updating method 5: componentDidUpdate
+  componentDidUpdate() {
+    console.log("LifecycleA componentDidUpdate");
+  }
+
   // method 4: render method
   render() {
     console.log("LifecycleA render");
