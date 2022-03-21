@@ -19,11 +19,13 @@
 import React, { component } from "react";
 import "./App.css";
 import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <FragmentDemo />
+      <Table />
+      {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
       {/* <Form /> */}
       {/* <h1 className="error">Error</h1>
