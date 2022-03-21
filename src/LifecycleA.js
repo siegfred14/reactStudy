@@ -4,7 +4,7 @@ import LifecycleB from "./LifecycleB";
 
 // methods in mounting
 class LifecycleA extends Component {
-  // method 1: constructor
+  // Mounting method 1: constructor
   constructor(props) {
     super(props);
 
@@ -14,12 +14,12 @@ class LifecycleA extends Component {
     console.log("LifecycleA constructor");
   }
 
-  // method 2: getDerivedStateFromProps
+  // Mounting method 2: getDerivedStateFromProps
   static getDerivedStateFromProps(props, state) {
     console.log("LifecycleA getDerivedStateFromProps");
   }
 
-  // method 3: componentDidMount
+  // Mounting method 3: componentDidMount
   componentDidMount() {
     console.log("LifecycleA ComponentDidMount");
   }
@@ -47,7 +47,7 @@ class LifecycleA extends Component {
     });
   };
 
-  // method 4: render method
+  // method 4: render method (Covers all methods)
   render() {
     console.log("LifecycleA render");
     return (
