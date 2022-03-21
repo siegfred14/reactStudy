@@ -64,7 +64,7 @@ export default LifecycleA;
 
 // this runs in the manner 1,2,4,3
 
-// Updating Lifecycle methods
+// Updating Lifecycle phase methods
 // constructor(props)
 // static getDerivedStateFromProps(props, state)
 // shouldComponentUpdate(nextProps, nextState)
@@ -74,13 +74,13 @@ export default LifecycleA;
 
 // render and componentDidUpdate are the most used during lifecycle update
 
-// Unmounting Phase
+// Unmounting Lifecycle Phase Methods
 // Only method used is  componentWillUnmount()
 //  method is invoked immediately before component is unmounted or destroyed
 // cancelling any network requests, removing event handlers, cancelling any subscriptions and and also invalidating timers
 // do not call the setState method because a component is never re-rendered after unmounted
 
-// Error Handling Phase Methods
+// Error Handling Lifecycle Phase Methods
 // static getDerivedStateFromError(error)
 // componentDidCatch(error, info)
 // Both are called when there is an error either during rendering in a lifecycle method or in the constructor of any child component
