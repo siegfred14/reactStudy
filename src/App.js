@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Joy from "./components/MyTest";
@@ -14,9 +13,10 @@ import Stylesheet from "./components/Stylesheet";
 import Inline from "./inline";
 import "./appStyle.css";
 import styles from "./appStyles.module.css";
-import Form from "./Form";
-import LifecycleA from "./LifecycleA";
-import FragmentDemo from "./FragmentDemo";
+import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
+import "./App.css";
+import FragmentDemo from "./components/FragmentDemo";
 
 function App() {
   return (
