@@ -1,20 +1,22 @@
-import logo from "./logo.svg";
-import Greet from "./components/Greet";
-import Welcome from "./components/Welcome";
-import Joy from "./components/MyTest";
-import Hello from "./components/Hello";
-import Message from "./components/Message";
-import Counter from "./components/Counter";
-import EventBind from "./components/EventBind";
-import ParentComponent from "./components/ParentComponent";
-import UserGreeting from "./components/UserGreeting";
-import NameList from "./components/NameList";
-import Stylesheet from "./components/Stylesheet";
-import Inline from "./inline";
-import "./appStyle.css";
-import styles from "./appStyles.module.css";
-import Form from "./components/Form";
-import LifecycleA from "./components/LifecycleA";
+// import logo from "./logo.svg";
+// import Greet from "./components/Greet";
+// import Welcome from "./components/Welcome";
+// import Joy from "./components/MyTest";
+// import Hello from "./components/Hello";
+// import Message from "./components/Message";
+// import Counter from "./components/Counter";
+// import EventBind from "./components/EventBind";
+// import ParentComponent from "./components/ParentComponent";
+// import UserGreeting from "./components/UserGreeting";
+// import NameList from "./components/NameList";
+// import Stylesheet from "./components/Stylesheet";
+// import Inline from "./inline";
+// import "./appStyle.css";
+// import styles from "./appStyles.module.css";
+// import Form from "./components/Form";
+// import LifecycleA from "./components/LifecycleA";
+// import Person from "./components/Person";
+import React, { component } from "react";
 import "./App.css";
 import FragmentDemo from "./components/FragmentDemo";
 
@@ -39,6 +41,7 @@ function App() {
       {/* <Welcome /> */}
       {/* <Joy/> */}
       {/* <Hello/> */}
+      {/* <Person /> */}
       {/* <Greet name= "Bodam" heroName= "batman">
         <p>this is childrens props</p>
       </Greet>
