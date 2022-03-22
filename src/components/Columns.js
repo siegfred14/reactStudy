@@ -25,4 +25,4 @@ export default Columns;
 // NOTES
 // Fragments can accept the key attribute when rendering a list of items
 // Key attribute is the only attribute that can be parsed to a React Fragment for now
-// React Fragments can also be rendered using an empty opening tag and an empty closing tag
+// React Fragments can also be rendered using an empty opening tag and an empty closing tag, however, you cannot use the key attributes here
