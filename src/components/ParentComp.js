@@ -20,6 +20,7 @@ class ParentComp extends Component {
   }
 
   render() {
+    console.log("**************Parent Component**************");
     return (
       <div>
         <h2>ParentComp</h2>
@@ -31,3 +32,7 @@ class ParentComp extends Component {
 }
 
 export default ParentComp;
+
+// Differences btw Regular and Pure Components
+// A Regular Component does not implement the shouldComponentUpdate method.It always returns 'true' by default
+// A pure component on the other hand implements shouldComponentUpdate with a shalow props and state comparison.
