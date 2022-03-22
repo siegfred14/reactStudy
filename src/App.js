@@ -19,12 +19,14 @@
 import React, { component } from "react";
 import "./App.css";
 import FragmentDemo from "./components/FragmentDemo";
+import PureComp from "./components/PureComp";
 import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      <PureComp />
+      {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
       {/* <Form /> */}
