@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, PureComponent } from "react";
 import RegComp from "./RegComp";
 import PureComp from "./PureComp";
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -44,3 +44,6 @@ export default ParentComp;
 //  and only when the shallow comparison indicates there is a difference will the component rerender
 
 // Because there is no change in the previous prop value and the current, the pure component does not re-render
+
+// Pure components by preventing unnecesary re-render can give a performance boost in certain scenarios
+// If the Parent component is a pure component, the child component will not re-render regardless
