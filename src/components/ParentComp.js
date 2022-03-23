@@ -47,3 +47,5 @@ export default ParentComp;
 
 // Pure components by preventing unnecesary re-render can give a performance boost in certain scenarios
 // If the Parent component is a pure component, the child component will not re-render regardless
+
+// When creating a pure component, never mutate the state, always return a new object that reflects the new state
