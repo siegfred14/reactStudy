@@ -25,7 +25,7 @@ class ParentComp extends PureComponent {
     return (
       <div>
         <h2>ParentComp</h2>
-        <MemoComp />
+        <MemoComp name={this.state.name} />
         {/* <RegComp name={this.state.name} /> */}
         {/* <PureComp name={this.state.name} /> */}
       </div>

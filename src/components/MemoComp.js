@@ -9,6 +9,6 @@ function MemoComp({ name }) {
   );
 }
 
-export default MemoComp;
+export default React.memo(MemoComp);
 
 // What pure components is to class components, memo is to functional components
