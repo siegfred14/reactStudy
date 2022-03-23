@@ -1,6 +1,7 @@
 import React, { Component, PureComponent } from "react";
 import RegComp from "./RegComp";
 import PureComp from "./PureComp";
+import MemoComp from "./MemoComp";
 
 class ParentComp extends PureComponent {
   constructor(props) {
@@ -24,8 +25,9 @@ class ParentComp extends PureComponent {
     return (
       <div>
         <h2>ParentComp</h2>
-        <RegComp name={this.state.name} />
-        <PureComp name={this.state.name} />
+        <MemoComp />
+        {/* <RegComp name={this.state.name} /> */}
+        {/* <PureComp name={this.state.name} /> */}
       </div>
     );
   }
@@ -49,3 +51,5 @@ export default ParentComp;
 // If the Parent component is a pure component, the child component will not re-render regardless
 
 // When creating a pure component, never mutate the state, always return a new object that reflects the new state
+
+// What pure components is to class components, memo is to functional components
