@@ -10,3 +10,5 @@ function MemoComp({ name }) {
 }
 
 export default MemoComp;
+
+// What pure components is to class components, memo is to functional components
