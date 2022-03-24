@@ -7,6 +7,12 @@ class RefsDemo extends Component {
 
     this.inputRef = React.createRef();
   }
+
+  componentDidMount() {
+    this.inputRef.current.focus();
+    console.log(this.inputRef);
+  }
+
   render() {
     return (
       <div>
