@@ -21,12 +21,14 @@ import "./App.css";
 import FragmentDemo from "./components/FragmentDemo";
 import ParentComp from "./components/ParentComp";
 import PureComp from "./components/PureComp";
+import RefsDemo from "./components/RefsDemo";
 import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <ParentComp />
+      <RefsDemo />
+      {/* <ParentComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
