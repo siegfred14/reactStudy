@@ -6,6 +6,7 @@ class RefsDemo extends Component {
     super(props);
 
     this.inputRef = React.createRef();
+    this.cbRef = null;
   }
 
   componentDidMount() {
@@ -30,3 +31,6 @@ class RefsDemo extends Component {
 export default RefsDemo;
 
 // refs make it possible to access DOM nodes in react
+
+// Call back Refs Method
+// 1. Create the ref
