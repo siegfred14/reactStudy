@@ -25,6 +25,7 @@ class RefsDemo extends Component {
     return (
       <div>
         <input type="text" ref={this.inputRef} />
+        <input type="text" ref={this.setCbRef} />
         <button onClick={this.clickHandler}>Click</button>
       </div>
     );
@@ -38,3 +39,4 @@ export default RefsDemo;
 // Call back Refs Method
 // 1. Create the ref
 // 2. Create a method that would asign a DOM element, to the ref we have just created in (1.)
+// 3. Attach this ref to the input element
