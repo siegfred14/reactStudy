@@ -13,6 +13,9 @@ class RefsDemo extends Component {
   }
 
   componentDidMount() {
+    if (this.cbRef) {
+      this.cbRef.focus();
+    }
     // this.inputRef.current.focus();
     // console.log(this.inputRef);
   }
@@ -41,3 +44,4 @@ export default RefsDemo;
 // 2. Create a method that would asign a DOM element, to the ref we have just created in (1.)
 // 3. Attach this ref to the input element
 // NB Reaxt will call the ref callback with the DOM element, when the component mounts, and call it with null when it unmounts
+// 4. in componentDidMount, check if this.cbRef is not null, then access this.CbRef.focus
