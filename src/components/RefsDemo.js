@@ -7,6 +7,9 @@ class RefsDemo extends Component {
 
     this.inputRef = React.createRef();
     this.cbRef = null;
+    this.setCbRef = (element) => {
+      this.cbRef = element;
+    };
   }
 
   componentDidMount() {
@@ -34,3 +37,4 @@ export default RefsDemo;
 
 // Call back Refs Method
 // 1. Create the ref
+// 2. Create a method that would asign a DOM element, to the ref we have just created in (1.)
