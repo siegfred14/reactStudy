@@ -7,11 +7,15 @@ class FocusInput extends Component {
     this.componentRef = React.createRef();
   }
 
+  clickHandler = () => {
+    this.componentRef.current.focusInput();
+  };
+
   render() {
     return (
       <div>
         <Input ref={this.componentRef} />
-        <button>Focus Input</button>
+        <button onClick={this.clickHandler}>Focus Input</button>
       </div>
     );
   }
