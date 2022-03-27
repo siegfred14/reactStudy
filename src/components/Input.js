@@ -13,7 +13,7 @@ class Input extends Component {
   render() {
     return (
       <div>
-        <input type="text" />
+        <input type="text" ref={this.inputRef} />
       </div>
     );
   }
