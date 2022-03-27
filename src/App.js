@@ -20,6 +20,7 @@ import React, { component } from "react";
 import "./App.css";
 import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
+import FRParentInput from "./components/FRParentInput";
 import ParentComp from "./components/ParentComp";
 import PureComp from "./components/PureComp";
 import RefsDemo from "./components/RefsDemo";
@@ -28,7 +29,8 @@ import Table from "./components/Table";
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <FRParentInput />
+      {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
       {/* <Table /> */}
