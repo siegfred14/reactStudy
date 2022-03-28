@@ -19,3 +19,7 @@ function PortalDemo() {
 }
 
 export default PortalDemo;
+
+// The first parameter that the ReactDOM can take can be any element that react can render. it could be number, string, JSX or even component.
+
+// One of the use cases of portals is having to deal with a parent component CSS, when the child component is a modal, a pop-up, or a tool tip
