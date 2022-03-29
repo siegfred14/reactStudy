@@ -34,6 +34,7 @@ function App() {
       <Hero heroName="Batman" />
       <Hero heroName="Superman" />
       <Hero heroName="WonderWoman" />
+      <Hero heroName="Joker" />
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
