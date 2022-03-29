@@ -21,6 +21,7 @@ import "./App.css";
 import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
 import FRParentInput from "./components/FRParentInput";
+import Hero from "./components/Hero";
 import ParentComp from "./components/ParentComp";
 import PortalDemo from "./components/PortalDemo";
 import PureComp from "./components/PureComp";
@@ -30,7 +31,10 @@ import Table from "./components/Table";
 function App() {
   return (
     <div className="App">
-      <PortalDemo />
+      <Hero heroName="Batman" />
+      <Hero heroName="Superman" />
+      <Hero heroName="WonderWoman" />
+      {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
