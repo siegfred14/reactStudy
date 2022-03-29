@@ -18,6 +18,7 @@
 // import Person from "./components/Person";
 import React, { component } from "react";
 import "./App.css";
+import ErrorBoundary from "./components/ErrorBoundary";
 import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
 import FRParentInput from "./components/FRParentInput";
@@ -31,10 +32,12 @@ import Table from "./components/Table";
 function App() {
   return (
     <div className="App">
-      <Hero heroName="Batman" />
-      <Hero heroName="Superman" />
-      <Hero heroName="WonderWoman" />
-      <Hero heroName="Joker" />
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+        <Hero heroName="Superman" />
+        <Hero heroName="WonderWoman" />
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}

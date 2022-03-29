@@ -16,11 +16,10 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <h1>ErrorBoundary</h1>
-      </div>
-    );
+    if (this.state.hasError) {
+      return <h1>Something Went Wrong</h1>;
+    }
+    return this.props.children;
   }
 }
 
