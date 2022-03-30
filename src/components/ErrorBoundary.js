@@ -29,3 +29,5 @@ class ErrorBoundary extends Component {
 }
 
 export default ErrorBoundary;
+
+// Error boundaries are React components that catch JavaScript error in their child component Tree, log those errors and display a fall-back UI
