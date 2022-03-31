@@ -18,6 +18,7 @@
 // import Person from "./components/Person";
 import React, { component } from "react";
 import "./App.css";
+import ClickCounter from "./components/ClickCounter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
@@ -32,7 +33,8 @@ import Table from "./components/Table";
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+      <ClickCounter />
+      {/* <ErrorBoundary>
         <Hero heroName="Batman" />
       </ErrorBoundary>
       <ErrorBoundary>
@@ -43,7 +45,7 @@ function App() {
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroName="Joker" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
