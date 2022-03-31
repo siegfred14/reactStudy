@@ -24,6 +24,7 @@ import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
 import FRParentInput from "./components/FRParentInput";
 import Hero from "./components/Hero";
+import HoverCounter from "./components/HoverCounter";
 import ParentComp from "./components/ParentComp";
 import PortalDemo from "./components/PortalDemo";
 import PureComp from "./components/PureComp";
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <ClickCounter />
+      <HoverCounter />
       {/* <ErrorBoundary>
         <Hero heroName="Batman" />
       </ErrorBoundary>
