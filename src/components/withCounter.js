@@ -4,7 +4,7 @@
 
 import React from "react";
 
-const withCounter = (wrappedComponent) => {
+const withCounter = (WrappedComponent) => {
   class WithCounter extends React.Component {
     constructor(props) {
       super(props);
@@ -22,7 +22,7 @@ const withCounter = (wrappedComponent) => {
 
     render() {
       return (
-        <wrappedComponent
+        <WrappedComponent
           name="Siegfred"
           count={this.state.count}
           incrementCount={this.incrementCount}
