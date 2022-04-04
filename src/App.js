@@ -32,12 +32,14 @@ import PortalDemo from "./components/PortalDemo";
 import PureComp from "./components/PureComp";
 import RefsDemo from "./components/RefsDemo";
 import Table from "./components/Table";
+import User from "./components/User";
 
 function App() {
   return (
     <div className="App">
       <ClickCounterTwo />
       <HoverCounterTwo />
+      <User />
       {/* <ClickCounter name="Siegfred" />
       <HoverCounter /> */}
       {/* <ErrorBoundary>
