@@ -17,7 +17,11 @@ class ClickCounterTwo extends Component {
 
   render() {
     const { count } = this.state;
-    return <div>Clicked {count} Times</div>;
+    return (
+      <div>
+        <button onClick={this.incrementCount}> Clicked {count} Times</button>
+      </div>
+    );
   }
 }
 
