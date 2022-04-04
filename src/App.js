@@ -20,6 +20,7 @@ import React, { component } from "react";
 import "./App.css";
 import ClickCounter from "./components/ClickCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
+import Counter2 from "./components/Counter2";
 import ErrorBoundary from "./components/ErrorBoundary";
 import FocusInput from "./components/FocusInput";
 import FragmentDemo from "./components/FragmentDemo";
@@ -37,9 +38,19 @@ import User from "./components/User";
 function App() {
   return (
     <div className="App">
-      <ClickCounterTwo />
+      <Counter2
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Counter2
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      {/* <ClickCounterTwo />
       <HoverCounterTwo />
-      <User render={(isLoggedIn) => (isLoggedIn ? "Siegfred" : "Guest")} />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Siegfred" : "Guest")} /> */}
       {/* <ClickCounter name="Siegfred" />
       <HoverCounter /> */}
       {/* <ErrorBoundary>
