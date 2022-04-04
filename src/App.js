@@ -26,6 +26,7 @@ import FragmentDemo from "./components/FragmentDemo";
 import FRParentInput from "./components/FRParentInput";
 import Hero from "./components/Hero";
 import HoverCounter from "./components/HoverCounter";
+import HoverCounterTwo from "./components/HoverCounterTwo";
 import ParentComp from "./components/ParentComp";
 import PortalDemo from "./components/PortalDemo";
 import PureComp from "./components/PureComp";
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <ClickCounterTwo />
+      <HoverCounterTwo />
       {/* <ClickCounter name="Siegfred" />
       <HoverCounter /> */}
       {/* <ErrorBoundary>
