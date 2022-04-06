@@ -20,6 +20,7 @@ import React, { component } from "react";
 import "./App.css";
 import ClickCounter from "./components/ClickCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
+import ComponentC from "./components/ComponentC";
 import Counter2 from "./components/Counter2";
 import ErrorBoundary from "./components/ErrorBoundary";
 import FocusInput from "./components/FocusInput";
@@ -38,18 +39,17 @@ import User from "./components/User";
 function App() {
   return (
     <div className="App">
-      <Counter2>
-        {/* render= */}
+      <ComponentC />
+      {/* <Counter2>
         {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
       </Counter2>
       <Counter2>
-        {/* render= */}
         {(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      </Counter2>
+      </Counter2> */}
       {/* <Counter2
             render={(count, incrementCount) => (
               <ClickCounterTwo count={count} incrementCount={incrementCount} />
