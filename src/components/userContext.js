@@ -9,3 +9,7 @@ const UserContext = React.createContext();
 
 const UserProvider = UserContext.Provider;
 const UserConsumer = UserContext.Consumer;
+
+export { UserProvider, UserConsumer };
+
+// 2. Provide a context value (Wrapping Component in App.js with User Provider)

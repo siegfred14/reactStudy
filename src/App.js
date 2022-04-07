@@ -35,11 +35,14 @@ import PureComp from "./components/PureComp";
 import RefsDemo from "./components/RefsDemo";
 import Table from "./components/Table";
 import User from "./components/User";
+import { UserProvider } from "./components/userContext";
 
 function App() {
   return (
     <div className="App">
-      <ComponentC />
+      <UserProvider value="Siegfred">
+        <ComponentC />
+      </UserProvider>
       {/* <Counter2>
         {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
