@@ -22,3 +22,7 @@ export default ComponentE;
 // ComponentE.contextType = UserContext;
 // with
 // static contextType = UserContext;  (Before the render method)
+
+// Limitations of public class field Syntax
+// 1. It only works with class components
+// 2. you can only subscribe to a single context, using the contextType
