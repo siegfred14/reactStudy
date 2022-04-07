@@ -11,9 +11,13 @@ const UserProvider = UserContext.Provider;
 const UserConsumer = UserContext.Consumer;
 
 export { UserProvider, UserConsumer };
+export default UserContext;
 
 // 2. Provide a context value (Wrapping Component in App.js with User Provider)
 // 3. Consume the context value
 
 // You can set a default value to your context and the default value is set while creating your context
 // it is passed as an argument to the createContext method
+
+// Using the context type property on a class
+// 1. export default UserContext
