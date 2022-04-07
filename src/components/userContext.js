@@ -13,3 +13,4 @@ const UserConsumer = UserContext.Consumer;
 export { UserProvider, UserConsumer };
 
 // 2. Provide a context value (Wrapping Component in App.js with User Provider)
+// 3. Consume the context value
