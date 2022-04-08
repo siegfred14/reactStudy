@@ -7,7 +7,7 @@ export class ComponentE extends Component {
   render() {
     return (
       <div>
-        Component E context {this.context}
+        <h1>Component E context {this.context}</h1>
         <ComponentF />
       </div>
     );
