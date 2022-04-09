@@ -22,3 +22,5 @@ export default UserContext;
 // Using the context type property on a class
 // 1. export default UserContext
 // 2. Assign this UserContext to the context type property on a class (Using Component E)
+
+// This concludes React fundamentals
